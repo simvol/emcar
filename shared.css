@@ -1,0 +1,11 @@
+.gradient-1 {
+    background: linear-gradient(to right, #ff3365 0%, #804fae 100%);
+}
+
+.gradient-2 {
+    background: linear-gradient(to right, #7f4fae 0%, #4690e9 50%, #a8f6f7 100%);
+}
+
+.gradient-3 {
+    background: linear-gradient(to right, #4ad9e8 0%, #02ab8e 33%, #3bc657 66%, #f2fb06 100%);
+}

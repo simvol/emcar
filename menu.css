@@ -1,0 +1,26 @@
+menu {
+    display: flex;
+}
+
+menu > a {
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+menu .menu-item {
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 17px;
+    width: 145px;
+    text-align: center;
+    color: #292f35;
+}
+
+menu .menu-item a {
+    padding-right: 40px;
+    border-right: 1px solid #c9e4e9;
+}
+
+menu .menu-item:last-child a {
+    border-right: none;
+}
