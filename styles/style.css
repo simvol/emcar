@@ -29,7 +29,6 @@ main {
 }
 
 .sliding-image-container .floating-rectangle {
-    background: #51585c;
     padding: 25px;
     padding-left: 35px;
     position: absolute;
@@ -41,6 +40,16 @@ main {
     font-weight: 100;
     height: 80px;
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.floating-bg {
+    width:100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+    background: #51585c;
 }
 
 .sliding-image-container .floating-rectangle span:last-child{
@@ -57,25 +66,25 @@ main {
 }
 
 .image-clip-container {
+   /* background: url('../images/Type-Surf-Puja-Khurana-MDES.jpg'); */
    width: 100%;
    height: 100%;
    clip-path: polygon(0 0, 100% 0, 100% 71%, 0 91%);
    overflow: hidden;
-   background: url('images/Type-Surf-Puja-Khurana-MDES.jpg');
    background-position: center;
    background-position-y: 0;
 }
 
 
 .background-image2 {
-    background: url('images/Alonso-Benavente-Fortes.jpg');
+    /* background: url('../images/Alonso-Benavente-Fortes.jpg'); */
     background-size: 555px;
     background-position: center;
     background-position-y: 0%;
 }
 
 .background-image3 {
-    background: url('images/Unity-Bainbridge.jpg');
+    /* background: url('../images/Unity-Bainbridge.jpg'); */
     background-size: 830px;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,7 +92,7 @@ main {
 }
 
 .background-image4 {
-    background: url('images/application-deadline-website-x620.jpg');
+    /* background: url('../images/application-deadline-website-x620.jpg'); */
     background-size: 700px;
     background-position: center;
     background-repeat: no-repeat;
@@ -91,7 +100,7 @@ main {
 }
 
 .background-image5 {
-    background: url('images/Jesse-and-water-pump-no-logo-1280x800.jpg');
+    /* background: url('../images/Jesse-and-water-pump-no-logo-1280x800.jpg'); */
     background-position: center;
     background-repeat: no-repeat;
     background-position-y: 0%;
@@ -123,7 +132,7 @@ main {
 }
 
 .section-title {
-    font-size: 21px;
+    font-size: 1.2em;
     margin-bottom: 40px;
 }
 
@@ -364,35 +373,20 @@ footer ul{
     margin-left: 20px;
 }
 
-/* 
-@media screen and (max-width: 1150px) { 
-    .sliding-image-container {
-        height: 400px;
-    }
-
-    .second-section-container {
-        height: 430px;
-        transform: translate3d(0,-108px,0);
-    }
-
+@media screen and (min-width: 920px) {
     .image-clip-container {
-        clip-path: polygon(0 0, 100% 0, 100% 71%, 0 90%);
+        background-image: url('../images/Type-Surf-Puja-Khurana-MDES.jpg');
     }
-
-    .second-section-content {
-        clip-path: polygon(0 15%, 100% 0, 100% 89%, 0 75%);
+    .background-image2 {
+        background-image: url('../images/Alonso-Benavente-Fortes.jpg');
     }
-
-    .third-section-container {
-        height: 400px;
+    .background-image3 {
+        background-image: url('../images/Unity-Bainbridge.jpg');
     }
-
-    .fourth-section-contaier {
-        height: 327px;
-        clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
+    .background-image4 {
+        background-image: url('../images/application-deadline-website-x620.jpg');
     }
-
-    main {
-        height: 1400px;
+    .background-image5 {
+        background-image: url('../images/Jesse-and-water-pump-no-logo-1280x800.jpg');
     }
-} */
+}
